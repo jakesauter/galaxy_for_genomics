@@ -1,0 +1,573 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "Workflow constructed from history 'JHGDS Course 2 Final'",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Coriell-NA12880_R2.fastq"
+                }
+            ],
+            "label": "Coriell-NA12880_R2.fastq",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 321,
+                "top": 335
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "53342c04-eaa8-404f-bea8-de88d33399e9",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Coriell-NA12880_R1.fastq"
+                }
+            ],
+            "label": "Coriell-NA12880_R1.fastq",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 321,
+                "top": 455
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "4dc9529e-e3e2-40c4-ba7d-c3de677d0dc4",
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Coriell-NA12878_R2.fastq"
+                }
+            ],
+            "label": "Coriell-NA12878_R2.fastq",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 321,
+                "top": 575
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "acb5d861-c713-49ee-906d-88fd8abaeef2",
+            "workflow_outputs": []
+        },
+        "3": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Coriell-NA12878_R1.fastq"
+                }
+            ],
+            "label": "Coriell-NA12878_R1.fastq",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 321,
+                "top": 695
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "a2802ce9-96f9-4f1f-86b0-c3d363c815f5",
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Coriell-NA12877_R2.fastq"
+                }
+            ],
+            "label": "Coriell-NA12877_R2.fastq",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 321,
+                "top": 815
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "9b27cf89-f83c-4949-af49-0fb7d6233182",
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 5,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Coriell-NA12877_R1.fastq"
+                }
+            ],
+            "label": "Coriell-NA12877_R1.fastq",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 321,
+                "top": 935
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "73832bea-3cd8-467d-9f3d-9e5325241060",
+            "workflow_outputs": []
+        },
+        "6": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
+            "errors": null,
+            "id": 6,
+            "input_connections": {
+                "library|input_1": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "library|input_2": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Bowtie2",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "bam"
+                }
+            ],
+            "position": {
+                "left": 540,
+                "top": 594
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "749c918495f7",
+                "name": "bowtie2",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__job_resource\": {\"__job_resource__select\": \"no\", \"__current_case__\": 0}, \"analysis_type\": {\"analysis_type_selector\": \"simple\", \"__current_case__\": 0, \"presets\": \"no_presets\"}, \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"library\": {\"type\": \"paired\", \"__current_case__\": 1, \"input_1\": {\"__class__\": \"ConnectedValue\"}, \"input_2\": {\"__class__\": \"ConnectedValue\"}, \"unaligned_file\": \"false\", \"aligned_file\": \"false\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}, \"reference_genome\": {\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg19\"}, \"rg\": {\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"save_mapping_stats\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.3.4.3+galaxy0",
+            "type": "tool",
+            "uuid": "65d4bde5-15b1-4a42-b1c7-9a3150c60dcb",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "cabedfdc-3851-4446-ab5c-334f4060e371"
+                }
+            ]
+        },
+        "7": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
+            "errors": null,
+            "id": 7,
+            "input_connections": {
+                "library|input_1": {
+                    "id": 3,
+                    "output_name": "output"
+                },
+                "library|input_2": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Bowtie2",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "bam"
+                }
+            ],
+            "position": {
+                "left": 532,
+                "top": 412
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "749c918495f7",
+                "name": "bowtie2",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__job_resource\": {\"__job_resource__select\": \"no\", \"__current_case__\": 0}, \"analysis_type\": {\"analysis_type_selector\": \"simple\", \"__current_case__\": 0, \"presets\": \"no_presets\"}, \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"library\": {\"type\": \"paired\", \"__current_case__\": 1, \"input_1\": {\"__class__\": \"ConnectedValue\"}, \"input_2\": {\"__class__\": \"ConnectedValue\"}, \"unaligned_file\": \"false\", \"aligned_file\": \"false\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}, \"reference_genome\": {\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg19\"}, \"rg\": {\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"save_mapping_stats\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.3.4.3+galaxy0",
+            "type": "tool",
+            "uuid": "97794355-306a-4902-b6ef-d2d2423f8a10",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "b610cb0b-3d87-4833-b5bf-3b612ff090da"
+                }
+            ]
+        },
+        "8": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
+            "errors": null,
+            "id": 8,
+            "input_connections": {
+                "library|input_1": {
+                    "id": 5,
+                    "output_name": "output"
+                },
+                "library|input_2": {
+                    "id": 4,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Bowtie2",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "bam"
+                }
+            ],
+            "position": {
+                "left": 534,
+                "top": 224
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.4.3+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "749c918495f7",
+                "name": "bowtie2",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__job_resource\": {\"__job_resource__select\": \"no\", \"__current_case__\": 0}, \"analysis_type\": {\"analysis_type_selector\": \"simple\", \"__current_case__\": 0, \"presets\": \"no_presets\"}, \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"library\": {\"type\": \"paired\", \"__current_case__\": 1, \"input_1\": {\"__class__\": \"ConnectedValue\"}, \"input_2\": {\"__class__\": \"ConnectedValue\"}, \"unaligned_file\": \"false\", \"aligned_file\": \"false\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}, \"reference_genome\": {\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg19\"}, \"rg\": {\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"save_mapping_stats\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.3.4.3+galaxy0",
+            "type": "tool",
+            "uuid": "7c8e52e1-c04c-4595-a76f-6aed0ac6abac",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "b9155e23-2d22-488f-bbe1-f45e9c4708e0"
+                }
+            ]
+        },
+        "9": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+            "errors": null,
+            "id": 9,
+            "input_connections": {
+                "reference_source|batchmode|input_bams": [
+                    {
+                        "id": 6,
+                        "output_name": "output"
+                    },
+                    {
+                        "id": 8,
+                        "output_name": "output"
+                    },
+                    {
+                        "id": 7,
+                        "output_name": "output"
+                    }
+                ]
+            },
+            "inputs": [],
+            "label": null,
+            "name": "FreeBayes",
+            "outputs": [
+                {
+                    "name": "output_vcf",
+                    "type": "vcf"
+                }
+            ],
+            "position": {
+                "left": 809,
+                "top": 102
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+            "tool_shed_repository": {
+                "changeset_revision": "156b60c1530f",
+                "name": "freebayes",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__job_resource\": {\"__job_resource__select\": \"no\", \"__current_case__\": 0}, \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"options_type\": {\"options_type_selector\": \"simple\", \"__current_case__\": 1}, \"reference_source\": {\"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"batchmode\": {\"processmode\": \"merge\", \"__current_case__\": 1, \"input_bams\": {\"__class__\": \"ConnectedValue\"}}, \"ref_file\": \"hg19\"}, \"target_limit_type\": {\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.0.46-0",
+            "type": "tool",
+            "uuid": "580fcfea-20b4-471d-ada9-8d5768c73c73",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output_vcf",
+                    "uuid": "858cf7da-50db-4b51-9e19-cbaceb763203"
+                }
+            ]
+        },
+        "10": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcffilter/vcffilter2/1.0.0_rc1+galaxy3",
+            "errors": null,
+            "id": 10,
+            "input_connections": {
+                "input1": {
+                    "id": 9,
+                    "output_name": "output_vcf"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "VCFfilter:",
+            "outputs": [
+                {
+                    "name": "out_file1",
+                    "type": "vcf"
+                }
+            ],
+            "position": {
+                "left": 1049,
+                "top": 236
+            },
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_file1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcffilter/vcffilter2/1.0.0_rc1+galaxy3",
+            "tool_shed_repository": {
+                "changeset_revision": "81972652519c",
+                "name": "vcffilter",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"allele_tag\": \"false\", \"append_filter\": \"false\", \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"filter_repeat\": [{\"__index__\": 0, \"filter_type\": \"-f\", \"filter_value\": \"QUAL > 40\"}], \"filter_sites\": \"false\", \"input1\": {\"__class__\": \"ConnectedValue\"}, \"invert\": \"false\", \"or\": \"false\", \"region\": \"\", \"tag_fail\": \"false\", \"tag_pass\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.0_rc1+galaxy3",
+            "type": "tool",
+            "uuid": "6c1ed644-2837-4aab-baa1-6738a30e2960",
+            "workflow_outputs": []
+        },
+        "11": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_annovar/table_annovar/0.2",
+            "errors": null,
+            "id": 11,
+            "input_connections": {
+                "input": {
+                    "id": 10,
+                    "output_name": "out_file1"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "ANNOVAR Annotate VCF",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 1199,
+                "top": 378
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_annovar/table_annovar/0.2",
+            "tool_shed_repository": {
+                "changeset_revision": "08b003ee9db7",
+                "name": "table_annovar",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"filters\": null, \"gene_anns\": [\"gencodeV19\"], \"input\": {\"__class__\": \"ConnectedValue\"}, \"out_format\": \"tabular\", \"regions\": null, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.2",
+            "type": "tool",
+            "uuid": "5da2ef51-76af-4963-b6a4-2d386c7dd30d",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "9ca379d5-d82d-4c9d-92c7-d8aba069c6f8"
+                }
+            ]
+        },
+        "12": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.9+galaxy1",
+            "errors": null,
+            "id": 12,
+            "input_connections": {
+                "input_file": {
+                    "id": 10,
+                    "output_name": "out_file1"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "bcftools stats",
+            "outputs": [
+                {
+                    "name": "output_file",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 1195,
+                "top": 510
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput_file": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output_file"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.9+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "ef2cc5ac23bc",
+                "name": "bcftools_stats",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"inputB_file\": null, \"input_file\": {\"__class__\": \"ConnectedValue\"}, \"plot_title\": \"\", \"sec_default\": {\"first_allele_only\": \"false\", \"depth\": {\"set_depth\": \"no\", \"__current_case__\": 0}, \"reference_source\": {\"reference_source_selector\": \"\", \"__current_case__\": 0}, \"exons_file\": null, \"split_by_ID\": \"false\", \"user_tstv\": \"\", \"afbins\": {\"afbins_select\": \"default\", \"__current_case__\": 0}, \"af_tag\": \"\", \"verbose\": \"false\"}, \"sec_restrict\": {\"samples\": \"\", \"invert_samples\": \"false\", \"samples_file\": null, \"invert_samples_file\": \"false\", \"apply_filters\": \"\", \"collapse\": null, \"regions\": {\"regions_src\": \"__none__\", \"__current_case__\": 0}, \"targets\": {\"targets_src\": \"__none__\", \"__current_case__\": 0}, \"include\": \"\", \"exclude\": \"\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.9+galaxy1",
+            "type": "tool",
+            "uuid": "80f7c0e1-c6db-4b05-a9d6-515fdfbf0505",
+            "workflow_outputs": []
+        },
+        "13": {
+            "annotation": "",
+            "content_id": "Grouping1",
+            "errors": null,
+            "id": 13,
+            "input_connections": {
+                "input1": {
+                    "id": 11,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Group",
+            "outputs": [
+                {
+                    "name": "out_file1",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 1462,
+                "top": 311
+            },
+            "post_job_actions": {},
+            "tool_id": "Grouping1",
+            "tool_state": "{\"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"groupcol\": \"7\", \"ignorecase\": \"false\", \"ignorelines\": null, \"input1\": {\"__class__\": \"ConnectedValue\"}, \"operations\": [{\"__index__\": 0, \"optype\": \"length\", \"opcol\": \"7\", \"opround\": \"no\", \"opdefault\": \"\"}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.1.4",
+            "type": "tool",
+            "uuid": "8d14de36-da20-410d-8da2-e3a4ee2f80ce",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_file1",
+                    "uuid": "2518907f-0061-4064-bc73-9d28d3127351"
+                }
+            ]
+        },
+        "14": {
+            "annotation": "",
+            "content_id": "sort1",
+            "errors": null,
+            "id": 14,
+            "input_connections": {
+                "input": {
+                    "id": 13,
+                    "output_name": "out_file1"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Sort",
+            "outputs": [
+                {
+                    "name": "out_file1",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1463,
+                "top": 180
+            },
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_file1"
+                }
+            },
+            "tool_id": "sort1",
+            "tool_state": "{\"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\", \"column\": \"2\", \"column_set\": [], \"header_lines\": \"0\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"order\": \"DESC\", \"style\": \"num\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.0",
+            "type": "tool",
+            "uuid": "3f95fc20-4fd9-46f9-8ac0-af7cad77ee95",
+            "workflow_outputs": []
+        }
+    },
+    "tags": [],
+    "uuid": "65a9ee7e-f8c7-41b2-8648-b9cfedc42fd3",
+    "version": 1
+}
